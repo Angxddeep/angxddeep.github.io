@@ -6,8 +6,9 @@ Hi, I’m Angad, this blog is where I share my thoughts, guides, and whatever el
 
 ## Technologies I Use
 
-- **Programming Languages** - C, Go, Rust (Still learnign)
-- **Scripting Languages** - bash, Python
+- **Programming Languages** - C, Go, Rust (Still learning)
+- **Scripting Languages** - Bash, Python
+- **Operating System** - Fedora Linux
 
 ## Check Out My Work
 
