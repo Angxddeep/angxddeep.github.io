@@ -1,0 +1,8 @@
+remote_theme: angxddeep/hackerv2@master
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+title: Angaddeep Singh
+description: Blog to showcase and share my knowledge
+header_pages:
+- index.md
+style: dark
