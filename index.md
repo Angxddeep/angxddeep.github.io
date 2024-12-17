@@ -14,5 +14,5 @@ Hi, I’m Angad, this blog is where I share my thoughts, guides, and whatever el
 
 - [My GitHub](https://github.com/angxddeep)
 - [My LeetCode Profile](https://leetcode.com/u/angxddeep/)
-- [My X Profile] (https://x.com/angxddeep)
+- [My X Profile](https://x.com/angxddeep)
 
