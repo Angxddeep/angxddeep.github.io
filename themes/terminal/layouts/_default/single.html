@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="typeme">
+  <span class="text-secondary">angad@dev </span>
+  <span class="text-background">~ </span>
+  <span class="cursor">$ </span>
+  cat {{ .File.BaseFileName }}.md
+</div>
+<section class="output">
+  <h1>{{ .Title }}</h1>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+  {{ .Content }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+</section>
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="typeme">
+  <span class="text-secondary">angad@dev </span>
+  <span class="text-background">~ </span>
+  <span class="cursor">$ </span>
+  ls {{ .Title | lower }}
+</div>
+<section class="output">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    <p>{{ .Summary }}</p>
+    <p><small>{{ .Date.Format "2006-01-02" }}</small></p>
+  {{ end }}
+</section>
+{{ end }}
