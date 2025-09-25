@@ -1,21 +1,31 @@
 ## angxddeep.github.io
 
-React + Vite + TypeScript personal site with a bluish-cyan gradient and a Markdown blog.
+Personal site powered by Hugo with custom layouts and assets.
 
-### Local dev
+### Stack
+- Hugo (extended)
+- Local layouts in `layouts/` and assets in `assets/`
+- GitHub Pages deploy via `.github/workflows/hugo.yml`
 
+### Local development
 ```bash
-npm install
-npm run dev
+# install Hugo (extended) if needed
+# https://gohugo.io/installation/
+
+# run dev server with live reload
+hugo server -D
+# visit http://localhost:1313/
 ```
 
-### Writing posts
+### Build
+```bash
+hugo --minify
+# output is generated to ./public
+```
 
-- Add Markdown files to `public/posts/*.md` with frontmatter `title`, `date`, `description`.
-- Add a record to `public/posts/index.json` with the `slug` (filename without `.md`).
-
-### Deploy to GitHub Pages
- 
-Push to `main`. The workflow builds and publishes `dist` to Pages. Ensure repository is named `angxddeep.github.io` and Pages is enabled (Source: GitHub Actions).
+### Configuration
+- `hugo.toml`:
+  - `baseURL = 'https://angxddeep.github.io/'`
+  - `title = 'Angaddeep Singh'`
 
 
